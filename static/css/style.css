@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+
+    --bg-color:#ede8e2;
+    --second-bg-color:#7292a5;
+    --text-color:#000;
+    --main-color:#58c2ff;
+
+}
+
+html {
+    font-size: 65%;
+    overflow-x: hidden;
+    
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: grab;
+}
+
+.navbar a{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-inline: 2rem;
+    /*Border na cor de fundo parar manter os icones parados enquanto houver o hover*/
+    border: var(--bg-color) solid 2px ;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    border: var(--main-color) solid 2px ;
+    border-radius: 2%;
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 2px 2px 5px 1px var(--main-color);
+
+}
+
+#menu-icon {
+    font-size: 3rem;
+    color: var(--text-color);
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home-img {
+    width: 35vw;
+    padding-left: 5rem;
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.home-content h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: tra;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    font-size: 2.2rem;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem 0.2rem var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    transition: 0.3s ease;
+}
+
+.btn a {
+    color: var(--bg-color);
+}
+
+.btn:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
